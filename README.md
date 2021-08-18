@@ -17,8 +17,11 @@ R can make the API calls very fast. Moreover, we can work on the data very effic
 *	ex_get_countryinfo.R
 
 	 This script uses functions from 
-   ```proc_get_countries.R" 	
-	 proc_plentymarkets_login.R" ```
+   ```
+	proc_get_countries.R" 	
+	proc_plentymarkets_login.R" 
+```
+	
 and gets the list of countries. 
 	
 
