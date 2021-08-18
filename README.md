@@ -11,16 +11,14 @@ R can make the API calls very fast. Moreover, we can work on the data very effic
 	
 ## Information on the Rscripts 
 *	proc_plentymarkets_login.R
-	Plentymarkets REST API Login and get the API KEY 
+	 Plentymarkets REST API Login and get the API KEY 
 	
 *	ex_get_countryinfo.R
-
-	This script uses functions from 
+	 This script uses functions from 
    ```	
-    *  proc_get_countries.R" 
-	*  proc_plentymarkets_login.R"
-  ```   
-   
-	and gets the list of countries. 
+    proc_get_countries.R" 
+	
+	proc_plentymarkets_login.R"
+	 and gets the list of countries. 
 	
 
