@@ -14,9 +14,9 @@ R can make the API calls very fast. Moreover, we can work on the data very effic
 	Plentymarkets REST API Login and get the API KEY 
 	
 *	ex_get_countryinfo.R
-	This script uses function from 
-**  proc_get_countries.R" 
-**  proc_plentymarkets_login.R" 
+	This script uses functions from 
+  *  proc_get_countries.R" 
+  *  proc_plentymarkets_login.R" 
 	and gets the list of countries. 
 	
 
