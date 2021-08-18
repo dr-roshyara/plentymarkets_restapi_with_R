@@ -12,23 +12,31 @@
 
 
 
-#*****************************************************************************
+#**********************
 #**
 #*call the libraries
 
 library(httr)
 library(jsonlite)
 
-#*****************************************************************************
+
+
+#***********************
+#* make call to get the API Key 
+#*
+
+getApiKey<-function(plenty_username, plenty_password, basicPath, loginPath){
+#***********************
 #*your Login url: 
 #*
 
-url           =modify_url(basicpath, path = loginPath)
-
-#*****************************************************************************
-#* make call to get the API Key 
-
-getApiKey<-function(plenty_username, plenty_password){
+	url           =modify_url(basicPath, path = loginPath)
+	
+#****
+#*
+#*make login call 
+#*
+	
 	res <- POST(url, 
 				body = list(grant_type = "password", username = plenty_username, password = plenty_password),
 				#authenticate("clientid", "clientsecret"),
@@ -36,7 +44,7 @@ getApiKey<-function(plenty_username, plenty_password){
 	)
 	resContent =content(res)
 
-	#*****************************************************************************
+	#*************
 	#*just print out the API KEY 
 	#print(resContent) 
 	apiKey = resContent$access_token
